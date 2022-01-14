@@ -18,7 +18,7 @@ public class GameSetting {
     }
 
     if (numOfHits == locationCells.length) {
-      result = "kill";
+      result = "모두 찾았습니다!!!";
     }
     System.out.println(result);
     return result;

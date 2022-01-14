@@ -11,12 +11,12 @@ public class GameMain {
     boolean isAlive = true;
   
     while (isAlive == true) {
-      String guess = helper.getUserInput("enter a number");
+      String guess = helper.getUserInput("숫자를 입력하세요: ");
       String result = setting.checkYourself(guess);
       numOfGuesses++;
-      if (result.equals("kill")) {
+      if (result.equals("모두 찾았습니다!!!")) {
         isAlive = false;
-        System.out.println(numOfGuesses + "guesses");
+        System.out.println(numOfGuesses + " 번째에 성공!!!");
       }
     }
   }
